@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Archan Yuri | Web Developer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#020617;
+color:white;
+transition:0.4s;
+}
+
+/* LIGHT THEME */
+
+body.light{
+background:#ffffff;
+color:#111;
+}
+
+body.light header{
+background:url("https://api.deline.web.id/wIxbpVsRd0.jpg") center/cover no-repeat;
+}
+
+body.light .card{
+background:#fff;
+border:2px solid #000;
+}
+
+body.light .btn{
+background:#000;
+color:#fff;
+box-shadow:none;
+}
+
+body.light .btn:hover{
+background:#222;
+}
+
+body.light footer{
+background:#eee;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+text-align:center;
+padding:140px 20px;
+background:url("https://api.deline.web.id/wIxbpVsRd0.jpg") center/cover no-repeat;
+position:relative;
+}
+
+header::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+}
+
+header *{
+position:relative;
+z-index:2;
+}
+
+header h1{
+font-size:50px;
+color:#38bdf8;
+text-shadow:0 0 15px #38bdf8;
+}
+
+body.light header h1{
+color:#fff;
+text-shadow:none;
+}
+
+header p{
+margin-top:10px;
+color:#e2e8f0;
+}
+
+/* BUTTON */
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#38bdf8;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+transition:0.3s;
+box-shadow:0 0 10px #38bdf8;
+}
+
+.btn:hover{
+background:#0ea5e9;
+box-shadow:0 0 20px #38bdf8;
+transform:translateY(-3px);
+}
+
+/* THEME BUTTON */
+
+.theme-btn{
+position:fixed;
+top:20px;
+right:20px;
+padding:10px 18px;
+border:none;
+border-radius:8px;
+background:#38bdf8;
+color:white;
+cursor:pointer;
+z-index:999;
+}
+
+body.light .theme-btn{
+background:#000;
+}
+
+/* SECTION */
+
+section{
+padding:70px 10%;
+}
+
+.title{
+font-size:30px;
+margin-bottom:25px;
+border-left:4px solid #38bdf8;
+padding-left:10px;
+}
+
+body.light .title{
+border-left:4px solid #000;
+}
+
+/* CARD */
+
+.card{
+background:#0f172a;
+padding:25px;
+border-radius:12px;
+border:1px solid #1e293b;
+}
+
+/* SKILL BAR */
+
+.skill{
+margin:15px 0;
+}
+
+.bar{
+background:#1e293b;
+height:10px;
+border-radius:10px;
+overflow:hidden;
+}
+
+body.light .bar{
+background:#ddd;
+}
+
+.progress{
+height:10px;
+background:#38bdf8;
+}
+
+body.light .progress{
+background:#000;
+}
+
+/* CONTACT BUTTON */
+
+.contact-buttons{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:25px;
+background:#020617;
+color:#94a3b8;
+margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:35px;
+}
+
+section{
+padding:60px 6%;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button class="theme-btn" onclick="toggleTheme()">Ganti Tema</button>
+
+<header>
+
+<h1>Archan Yuri</h1>
+<p>Portofolio • Web developer</p>
+
+<a href="https://naytopup.toko.vip/" target="_blank" class="btn">
+🌐 Website Topup Game
+</a>
+
+</header>
+
+<section>
+
+<h2 class="title">Tentang Saya</h2>
+
+<div class="card">
+
+<p>
+Saya adalah seorang <b>Web Developer dan Bot Developer</b>.  
+Lulusan <b>SMK Cendikia BTG</b> jurusan Alat Berat.
+
+<br><br>
+
+Selain itu saya juga memiliki pengalaman dalam dunia pemrograman seperti:
+
+<br><br>
+
+✔ JavaScript  
+✔ NodeJS  
+✔ NPM  
+✔ Baileys WhatsApp API  
+✔ Web Development  
+
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Skill Statistik</h2>
+
+<div class="card">
+
+<div class="skill">
+<p>JavaScript</p>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<p>NodeJS</p>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<p>NPM</p>
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+<div class="skill">
+<p>Baileys WhatsApp API</p>
+<div class="bar"><div class="progress" style="width:92%"></div></div>
+</div>
+
+<div class="skill">
+<p>Web Development</p>
+<div class="bar"><div class="progress" style="width:88%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Project</h2>
+
+<div class="card">
+
+<h3>Website Topup Game</h3>
+
+<p>
+Website topup game otomatis dengan sistem pembayaran digital.
+</p>
+
+<br>
+
+<a href="https://naytopup.toko.vip/" class="btn" target="_blank">
+Kunjungi Website
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Kontak Saya</h2>
+
+<div class="card contact-buttons">
+
+<a href="https://naytopup.toko.vip/" target="_blank" class="btn">🌐 Website</a>
+
+<a href="https://wa.me/6281347586041" target="_blank" class="btn">💬 WhatsApp</a>
+
+<a href="https://instagram.com/archanyuri" target="_blank" class="btn">📸 Instagram</a>
+
+<a href="https://t.me/nolpersenenergy" target="_blank" class="btn">✈ Telegram</a>
+
+<a href="mailto:shostoretrusted@gmail.com" class="btn">📧 Email</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Archan Yuri • Web Developer
+
+</footer>
+
+<script>
+
+function toggleTheme(){
+document.body.classList.toggle("light")
+}
+
+</script>
+
+</body>
+</html>
